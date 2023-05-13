@@ -79,17 +79,3 @@ WHERE sales_id = (
     WHERE order_data BETWEEN '2018/09/01' AND '2018/09/30'
     ORDER BY amount DESC
     LIMIT 1);
-
-
-
---2018/09/01'から'2018/09/30'の範囲でamountの降順に最大1件分のsales_idを取得のSQLテスト
-SELECT *
-FROM sales
-WHERE order_data BETWEEN '2018/09/01' AND '2018/09/30'
-ORDER BY amount DESC
-LIMIT 1;
-        
-
---テーブル確認用      
-SELECT * FROM sales;
-SELECT * FROM customer;
